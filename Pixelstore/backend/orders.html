@@ -1,0 +1,44 @@
+<h1>Orders</h1>
+
+<div id="orders"></div>
+
+<script>
+
+fetch(
+"http://127.0.0.1:5000/orders"
+)
+
+.then(response =>
+response.json())
+
+.then(orders => {
+
+const div =
+document.getElementById(
+"orders"
+);
+
+orders.forEach(order => {
+
+div.innerHTML += `
+
+<div>
+
+<h3>
+Order #${order.id}
+</h3>
+
+<p>
+Total:
+$${order.total}
+</p>
+
+</div>
+
+`;
+
+});
+
+});
+
+</script>

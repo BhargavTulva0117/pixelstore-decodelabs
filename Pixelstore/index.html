@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelStore</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- PREMIUM SPLASH SCREEN -->
+
+<div id="splashScreen">
+
+    <div class="splash-content">
+
+        <h1 class="splash-logo">
+
+            Pixel<span>Store</span>
+
+        </h1>
+
+        <p class="splash-tagline">
+
+            Future Technology Starts Here
+
+        </p>
+
+    </div>
+
+</div>
+
+    <!-- CART NOTIFICATION -->
+
+<div class="cart-notification" id="cartNotification">
+
+    Product Added To Cart 🛒
+
+</div>
+
+    <!-- Header -->
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo-area">
+
+    <div class="logo">
+        PixelStore
+    </div>
+
+    <div id="serverStatus"></div>
+
+</div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+    <li><a href="#home">Home</a></li>
+
+    <li><a href="products.html">Products</a></li>
+
+    <li><a href="#products">Categories</a></li>
+
+    <li><a href="#offers">Offers</a></li>
+
+    <li><a href="#contact">Contact</a></li>
+
+</ul>
+<!-- Search Bar -->
+
+<div class="search-box">
+
+    <input type="text" id="searchInput" placeholder="Search products...">
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+
+            <!-- Icons -->
+   <!-- Icons -->
+<div class="icons">
+
+    <div class="cart-icon">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span id="cartCount">0</span>
+
+        <div class="cart-preview" id="cartPreview">
+
+            <h4>Cart Summary</h4>
+
+            <p id="previewItems">
+                Items: 0
+            </p>
+
+            <p id="previewTotal">
+                Total: $0
+            </p>
+
+            <button onclick="document.getElementById('cartSidebar').classList.add('active')">
+                View Cart
+            </button>
+
+        </div>
+
+    </div>
+
+    <i class="fa-solid fa-moon" id="darkMode"></i>
+
+</div>
+
+            <!-- Mobile Menu -->
+            <div class="menu-toggle" id="menuToggle">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- CART SIDEBAR -->
+
+<div class="cart-sidebar" id="cartSidebar">
+
+    <!-- Cart Header -->
+    <div class="cart-header">
+
+        <h2>
+            Shopping Cart
+        </h2>
+
+        <i class="fa-solid fa-xmark" id="closeCart"></i>
+
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart-items" id="cartItems">
+
+        <p class="empty-cart">
+            Your cart is empty
+        </p>
+
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="cart-footer">
+
+        <h3>
+            Total: $
+            <span id="cartTotal">
+                0
+            </span>
+        </h3>
+
+        <button>
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+    
+
+    <!-- Left Content -->
+    <div class="hero-content">
+
+        <h1>
+            Discover Future Technology
+        </h1>
+
+        <p>
+            Explore premium gadgets, smart devices, and next-generation electronics
+            designed for modern lifestyles.
+        </p>
+
+        <button class="hero-btn">
+            Shop Now
+        </button>
+
+    </div>
+
+    <!-- Right Image -->
+    <div class="hero-image">
+
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1000&auto=format&fit=crop"
+            alt="Smartphone">
+
+    </div>
+
+</section>
+
+<section class="stats-section">
+
+    <div class="stat-card">
+
+        <h2 id="totalProducts">0</h2>
+
+        <p>Products</p>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 id="totalCategories">0</h2>
+
+        <p>Categories</p>
+
+    </div>
+
+</section>
+
+<!-- FEATURED PRODUCTS -->
+
+<section class="products" id="products">
+
+    <h2 class="section-title">
+        Featured Products
+    </h2>
+
+    <div class="product-container">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"?q=80&w=1000&auto=format&fit=crop"
+                alt="Headphones">
+
+            <h3>Wireless Headphones</h3>
+
+            <p>$120</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1000&auto=format&fit=crop"
+    alt="Laptop">
+            <h3>Gaming Laptop</h3>
+
+            <p>$950</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000&auto=format&fit=crop"
+                alt="Smart Watch">
+
+            <h3>Smart Watch</h3>
+
+            <p>$180</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1000&auto=format&fit=crop"
+                alt="Speaker">
+
+            <h3>Bluetooth Speaker</h3>
+
+            <p>$90</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- OFFER SECTION -->
+
+<section class="offer" id="offers">
+    <!-- Left Content -->
+    <div class="offer-content">
+
+        <h2>
+            Mega Tech Sale 2026
+        </h2>
+
+        <p>
+            Get up to 50% OFF on premium gadgets, gaming accessories,
+            smart devices, and modern electronics.
+        </p>
+
+        <button>
+            Explore Deals
+        </button>
+
+    </div>
+
+    <!-- Right Image -->
+    <div class="offer-image">
+
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000&auto=format&fit=crop"
+            alt="Offer">
+
+    </div>
+
+</section>
+<!-- FOOTER -->
+
+<footer class="footer" id="contact">
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+
+        <h2>
+            Subscribe For Latest Updates
+        </h2>
+
+        <p>
+            Get updates about latest gadgets, offers, and tech news.
+        </p>
+
+        <div class="newsletter-box">
+
+            <input type="email" placeholder="Enter your email">
+
+            <button>
+                Subscribe
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Content -->
+    <div class="footer-content">
+
+        <!-- Brand -->
+        <div class="footer-section">
+
+            <h3>PixelStore</h3>
+
+            <p>
+                Premium gadgets and future technology for modern lifestyles.
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+
+            <h3>Quick Links</h3>
+
+            <a href="#">Home</a>
+
+            <a href="#">Products</a>
+
+            <a href="#">Offers</a>
+
+            <a href="#">Contact</a>
+
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-twitter"></i>
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PixelStore | All Rights Reserved
+        </p>
+
+    </div>
+
+</footer>
+
+    <!-- JavaScript File -->
+     <script src="cart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
