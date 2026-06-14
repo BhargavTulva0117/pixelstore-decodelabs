@@ -144,6 +144,6 @@ Successfully developed a database-driven web application capable of storing, man
 
 ## 👨‍💻 Developed By
 
-**Bhargav Vickey**
+**Bhargav Tulva**
 B.Tech – Computer Science Engineering
 Full Stack Development Intern
